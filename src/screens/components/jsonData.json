@@ -1,0 +1,47 @@
+[
+
+  {
+    "cardId": 10,
+    "typeId": 1,
+    "typeName": "Öğrenci",
+    "typeDesc": "İndirimli Geçiş Kartı",
+    "boarderType": 1,//1:yaya , 0:araç
+    "cardNo": "Y1202121",
+    "balance": 52.5,
+    "isDealEnd": false,
+    "dealEndDate": ""
+  },
+  {
+    "cardId": 20,
+    "typeId": 2,
+    "typeName": "65 Yaş Üstü",
+    "typeDesc": "Geçiş Kartı",
+    "boarderType": 1,//1:yaya , 0:araç
+    "cardNo": "54E3333",
+    "balance": 125.00,
+    "isDealEnd": false,
+    "dealEndDate": ""
+  },
+  {
+    "cardId": 30,
+    "typeId": 3,
+    "typeName": "Kurumsal",
+    "typeDesc": "Geçiş Kartı",
+    "boarderType": 1,//1:yaya , 0:araç
+    "cardNo": "--",
+    "balance": 125.00,
+    "isDealEnd": false,
+    "dealEndDate": "15.10.2021"
+  },
+  {
+    "cardId": 40,
+    "typeId": 4,
+    "typeName": "Tam Yaya",
+    "typeDesc": "Geçiş Kartı",
+    "boarderType": 1,//1:yaya , 0:araç
+    "cardNo": "56722332892",
+    "balance": 155.00,
+    "isDealEnd": false,
+    "dealEndDate": "15.10.2021"
+  }
+]
