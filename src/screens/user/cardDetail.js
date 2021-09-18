@@ -27,9 +27,11 @@ const CardDetail = (props) => {
       <View style={styles.headerContainer} >
 
         <View style={styles.headerIconContainer} >
-          <TouchableOpacity style={{ flexDirection: 'row' }}   >
-            <Ionicons name='chevron-back-outline' size={28} color={COLORS.WHITE} style={{ margin: 12 }} />
-          </TouchableOpacity>
+       
+
+          <Button style={styles.backButton} onPress={()=>navigation.goBack()}   >
+            <Ionicons name='chevron-back-outline' size={24} color={COLORS.WHITE} style={{ padding:5 }} />
+          </Button>
         </View>
 
         <View style={styles.headerTextContainer} >
@@ -39,7 +41,7 @@ const CardDetail = (props) => {
       </View>
 
 
-      <View style={styles.content} >
+      <View style={styles.content}   >
         <View style={styles.cardTitleContainer} >
           <Text style={styles.cardTitle} >{selectedCard.typeName}</Text>
           <Text style={[styles.cardDescription, { marginVertical: 5 }]} >{selectedCard.typeDesc}</Text>
@@ -69,7 +71,7 @@ const CardDetail = (props) => {
 
         </View>
 
-        <View style={styles.firmContainer} >
+        <View style={styles.firmContainer}  >
 
           <Text style={styles.cardDescription} >Firma</Text>
           <Text style={styles.cardTitle} >Tanıtım Reklam Ajansı</Text>
@@ -91,10 +93,10 @@ const CardDetail = (props) => {
 
       </View>
 
-      <View style={styles.buttonGroupContainer} >
+      <View style={styles.buttonGroupContainer}  >
 
         <ScrollView>
-          <Button style={styles.buttonStyle} onPress={() => handleButton}>
+          <Button style={styles.buttonStyle} onPress={() => handleButton} >
             <Text style={styles.buttonText} >Bakiye yükle</Text>
           </Button>
 
@@ -128,10 +130,10 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.WHITE
   },
 
-  headerContainer: { flex: 2, width: '100%', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-end', backgroundColor: COLORS.DARK_BLUE, top: 0 },
+  headerContainer: { flex: 2, width: '100%', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', backgroundColor: COLORS.DARK_BLUE, top: 0 },
   headerText: { color: COLORS.WHITE, fontSize: 16, fontWeight: 'bold' },
 
-  headerTextContainer: { flex: 8, alignItems: 'flex-start', justifyContent: 'center', marginTop: 20, marginLeft: 30 },
+  headerTextContainer: { flex: 8, alignItems: 'flex-start', justifyContent: 'flex-start', marginLeft: 30 },
   headerIconContainer: { flex: 2, alignItems: 'center', justifyContent: 'center' },
   content: {
     flex: 3,
@@ -222,7 +224,7 @@ const styles = StyleSheet.create({
   },
 
   buttonText: { textTransform: 'uppercase', color: COLORS.WHITE, fontSize: 14, fontWeight: 'bold', width: '100%' },
-
+backButton:{ flexDirection: 'row' ,backgroundColor:'transparent'}
 })
 
 export default CardDetail;
